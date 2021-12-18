@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../assets/favicon-32x32.png"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../../general.css" />
+    <link rel="stylesheet" href="../../css/destinations/dest-style.css" />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="dest">
+    <!-- Header -->
+    <header class="header">
+      <!-- Logo -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+        <g fill="none" fill-rule="evenodd">
+          <circle cx="24" cy="24" r="24" fill="#FFF" />
+          <path
+            fill="#0B0D17"
+            d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"
+          />
+        </g>
+      </svg>
+
+      <!-- Nav -->
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a href="../../index.html" class="main-nav-link"
+              ><strong>00</strong>Home</a
+            >
+          </li>
+          <li>
+            <a href="#" class="main-nav-link active-link"
+              ><strong>01</strong>Destination</a
+            >
+          </li>
+          <li>
+            <a href="#" class="main-nav-link"><strong>02</strong>Crew</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link"><strong>03</strong>Technology</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn btn--mobile-nav">
+        <img
+          src="../../assets/shared/icon-hamburger.svg"
+          alt="Hamburger icon to open mobile navigation"
+          name="open-nav"
+        />
+        <img
+          src="../../assets/shared/icon-close.svg"
+          alt="X icon to close mobile navigation"
+          name="close-nav"
+        />
+      </button>
+    </header>
+
+    <main class="main-dest">
+      <!-- Title + tabs -->
+      <div class="main-dest--title-tabs">
+        <!-- Title -->
+        <h5 class="heading-five heading-five--white">
+          <strong>01</strong> Pick your destination
+        </h5>
+
+        <!-- Tabs -->
+        <div class="dest-tabs">
+          <button class="dest-tab active-tab--btn" data-tab="moon">Moon</button>
+          <button class="dest-tab" data-tab="mars">mars</button>
+          <button class="dest-tab" data-tab="europa">europa</button>
+          <button class="dest-tab" data-tab="titan">titan</button>
+        </div>
+      </div>
+
+      <!-- 1. MOON TAB -->
+      <!-- Img + info -->
+      <div class="main-dest--img-info grid--2-cols active-tab--info">
+        <div class="dest-img-box">
+          <!-- Allow the browser to choose the supported format (webp or png) -->
+          <picture>
+            <source
+              srcset="../../assets/destination/image-moon.webp"
+              type="image/webp"
+            />
+            <source
+              srcset="../../assets/destination/image-moon.png"
+              type="image/png"
+            />
+
+            <!-- Actual img rendered -->
+            <img
+              src="../../assets/destination/image-moon.png"
+              class="dest-img"
+              alt="Picture of the moon"
+            />
+          </picture>
+        </div>
+
+        <!-- Info. -->
+        <div class="dest-info-box">
+          <h2 class="heading-two">Moon</h2>
+          <p class="body-text">
+            See our planet as you’ve never seen it before. A perfect relaxing
+            trip away to help regain perspective and come back refreshed. While
+            you’re there, take in some history by visiting the Luna 2 and Apollo
+            11 landing sites.
+          </p>
+        </div>
+
+        <!-- Data -->
+        <div class="dest-data-box">
+          <div class="dest-data--distance">
+            <p class="subheading-two">avg. distance</p>
+            <p class="subheading-one">384,400 km</p>
+          </div>
+
+          <div class="dest-data--travel-time">
+            <p class="subheading-two">Est. travel time</p>
+            <p class="subheading-one">3 days</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. MARS TAB -->
+      <!-- Img + info -->
+      <div class="main-dest--img-info grid--2-cols">
+        <div class="dest-img-box">
+          <!-- Allow the browser to choose the supported format (webp or png) -->
+          <picture>
+            <source
+              srcset="../../assets/destination/image-mars.webp"
+              type="image/webp"
+            />
+            <source
+              srcset="../../assets/destination/image-mars.png"
+              type="image/png"
+            />
+
+            <!-- Actual img rendered -->
+            <img
+              src="../../assets/destination/image-mars.png"
+              class="dest-img"
+              alt="Picture of planet Mars"
+            />
+          </picture>
+        </div>
+
+        <!-- Info. -->
+        <div class="dest-info-box">
+          <h2 class="heading-two">Mars</h2>
+          <p class="body-text">
+            Don’t forget to pack your hiking boots. You’ll need them to tackle
+            Olympus Mons, the tallest planetary mountain in our solar system.
+            It’s two and a half times the size of Everest!
+          </p>
+        </div>
+
+        <!-- Data -->
+        <div class="dest-data-box">
+          <div class="dest-data--distance">
+            <p class="subheading-two">avg. distance</p>
+            <p class="subheading-one">225 mil. km</p>
+          </div>
+
+          <div class="dest-data--travel-time">
+            <p class="subheading-two">Est. travel time</p>
+            <p class="subheading-one">9 months</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. EUROPA TAB -->
+      <!-- Img + info -->
+      <div class="main-dest--img-info grid--2-cols">
+        <div class="dest-img-box">
+          <!-- Allow the browser to choose the supported format (webp or png) -->
+          <picture>
+            <source
+              srcset="../../assets/destination/image-europa.webp"
+              type="image/webp"
+            />
+            <source
+              srcset="../../assets/destination/image-europa.png"
+              type="image/png"
+            />
+
+            <!-- Actual img rendered -->
+            <img
+              src="../../assets/destination/image-europa.png"
+              class="dest-img"
+              alt="Picture of one of Jupiter's moons, Europa"
+            />
+          </picture>
+        </div>
+
+        <!-- Info. -->
+        <div class="dest-info-box">
+          <h2 class="heading-two">Europa</h2>
+          <p class="body-text">
+            The smallest of the four Galilean moons orbiting Jupiter, Europa is
+            a winter lover’s dream. With an icy surface, it’s perfect for a bit
+            of ice skating, curling, hockey, or simple relaxation in your snug
+            wintery cabin.
+          </p>
+        </div>
+
+        <!-- Data -->
+        <div class="dest-data-box">
+          <div class="dest-data--distance">
+            <p class="subheading-two">avg. distance</p>
+            <p class="subheading-one">628 mil. km</p>
+          </div>
+
+          <div class="dest-data--travel-time">
+            <p class="subheading-two">Est. travel time</p>
+            <p class="subheading-one">3 years</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. TITAN TAB -->
+      <!-- Img + info -->
+      <div class="main-dest--img-info grid--2-cols">
+        <div class="dest-img-box">
+          <!-- Allow the browser to choose the supported format (webp or png) -->
+          <picture>
+            <source
+              srcset="../../assets/destination/image-titan.webp"
+              type="image/webp"
+            />
+            <source
+              srcset="../../assets/destination/image-titan.png"
+              type="image/png"
+            />
+
+            <!-- Actual img rendered -->
+            <img
+              src="../../assets/destination/image-titan.png"
+              class="dest-img"
+              alt="Picture of planet Saturn's moon, Titan"
+            />
+          </picture>
+        </div>
+
+        <!-- Info. -->
+        <div class="dest-info-box">
+          <h2 class="heading-two">Titan</h2>
+          <p class="body-text">
+            The only moon known to have a dense atmosphere other than Earth,
+            Titan is a home away from home (just a few hundred degrees colder!).
+            As a bonus, you get striking views of the Rings of Saturn.
+          </p>
+        </div>
+
+        <!-- Data -->
+        <div class="dest-data-box">
+          <div class="dest-data--distance">
+            <p class="subheading-two">avg. distance</p>
+            <p class="subheading-one">1.6 bil. km</p>
+          </div>
+
+          <div class="dest-data--travel-time">
+            <p class="subheading-two">Est. travel time</p>
+            <p class="subheading-one">7 years</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
