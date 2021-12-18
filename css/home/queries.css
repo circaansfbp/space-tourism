@@ -1,0 +1,163 @@
+/************************************/
+/* TABLET (below 960px) */
+/************************************/
+@media (max-width: 60em) {
+  body {
+    background-image: url("../../assets/home/background-home-tablet.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .header {
+    margin-top: 0;
+    padding-left: 2.4375rem;
+  }
+
+  .main-nav {
+    max-width: 28.125rem;
+    padding: 0 2.9375rem;
+  }
+
+  .main-nav-list {
+    gap: 2.3125rem;
+  }
+
+  .main-nav-link strong {
+    display: none;
+  }
+
+  .main-lp {
+    grid-template-columns: 1fr;
+    row-gap: 9.75rem;
+    padding-left: 0;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .heading-five {
+    font-size: 1.25rem;
+  }
+
+  .body-text {
+    font-size: 1rem;
+  }
+
+  .main-lp--btn {
+    padding-bottom: 5.625rem;
+  }
+
+  .btn--lp {
+    height: 15.125rem;
+    width: 15.125rem;
+    font-size: 2rem;
+  }
+}
+
+/************************************/
+/* PHONES (below 608px) */
+/************************************/
+@media (max-width: 38em) {
+  body {
+    background-image: url("../../assets/home/background-home-mobile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  /* Mobile navigation */
+  .btn--mobile-nav {
+    display: block;
+    padding-right: 1.5rem;
+    z-index: 9999;
+  }
+
+  .btn--mobile-nav img[name="close-nav"] {
+    display: none;
+  }
+
+  .main-nav {
+    padding-top: 5rem;
+    padding-left: 2.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    max-width: 70%;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    transform: translateX(100%);
+    transition: all 0.4s ease-in-out;
+
+    /* Hide nav */
+    /* 1. Hide the element visually */
+    /* opacity: 0; */
+
+    /* 2. Make it unaccessible to mouse and keyboard */
+    /* pointer-events: none; */
+
+    /* 3. Hide it from screen readers */
+    /* visibility: hidden; */
+  }
+
+  /* nav-open class goes on the parent el (header) */
+  /* Toggle through JS */
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .btn--mobile-nav img[name="close-nav"] {
+    display: block;
+  }
+
+  .nav-open .btn--mobile-nav img[name="open-nav"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+
+  .main-nav-list li {
+    height: 5%;
+  }
+
+  .main-nav-link strong {
+    display: inline-block;
+  }
+  /* End mobile navigation styles */
+
+  .header {
+    padding-left: 1.5rem;
+  }
+
+  .main-lp {
+    padding: 0 1.5rem;
+  }
+
+  .heading-one {
+    font-size: 5rem;
+  }
+
+  .heading-five {
+    font-size: 1rem;
+  }
+
+  .body-text {
+    font-size: 0.9375rem;
+  }
+
+  .btn--lp {
+    height: 9.375rem;
+    width: 9.375rem;
+    font-size: 1.25rem;
+  }
+}

@@ -1,0 +1,64 @@
+/********************/
+/* HOME */
+/********************/
+body {
+  background-image: url("../../assets/home/background-home-desktop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.main-lp {
+  padding-left: 7.5rem;
+  align-items: end;
+}
+
+.main-lp--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.9375rem;
+  max-width: 28.125rem;
+}
+
+.main-lp--btn {
+  justify-self: center;
+}
+
+.btn--lp {
+  height: 17.125rem;
+  width: 17.125rem;
+  border-radius: 50%;
+  border: none;
+  background-color: #fff;
+  font-family: "Bellefair", serif;
+  font-size: 2rem;
+  color: #0b0d17;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+}
+
+/* On hover animation */
+.btn--lp::before {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #979797;
+  opacity: 0.8;
+  z-index: -1;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn--lp:hover::before,
+.btn--lp:focus::before {
+  width: 140%;
+  height: 140%;
+}

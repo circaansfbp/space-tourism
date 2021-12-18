@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../assets/favicon-32x32.png"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../../general.css" />
+    <link rel="stylesheet" href="../../css/destinations/dest-style.css" />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="dest">
+    <!-- Header -->
+    <header class="header">
+      <!-- Logo -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+        <g fill="none" fill-rule="evenodd">
+          <circle cx="24" cy="24" r="24" fill="#FFF" />
+          <path
+            fill="#0B0D17"
+            d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"
+          />
+        </g>
+      </svg>
+
+      <!-- Nav -->
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a href="../../index.html" class="main-nav-link"
+              ><strong>00</strong>Home</a
+            >
+          </li>
+          <li>
+            <a href="#" class="main-nav-link"><strong>01</strong>Destination</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link"><strong>02</strong>Crew</a>
+          </li>
+          <li>
+            <a href="#" class="main-nav-link"><strong>03</strong>Technology</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn btn--mobile-nav">
+        <img
+          src="../../assets/shared/icon-hamburger.svg"
+          alt="Hamburger icon to open mobile navigation"
+          name="open-nav"
+        />
+        <img
+          src="../../assets/shared/icon-close.svg"
+          alt="X icon to close mobile navigation"
+          name="close-nav"
+        />
+      </button>
+    </header>
+
+    <main class="main-dest grid--2-cols">
+      <!-- Title + img -->
+      <div class="main-dest--title-img">
+        <h5 class="heading-five heading-five--white">
+          <strong>01</strong> Pick your destination
+        </h5>
+
+        <div class="dest-img-box">
+          <!-- Allow the browser to choose the supported format (webp or png) -->
+          <picture>
+            <source
+              srcset="../../assets/destination/image-mars.webp"
+              type="image/webp"
+            />
+            <source
+              srcset="../../assets/destination/image-mars.png"
+              type="image/png"
+            />
+
+            <!-- Actual img rendered -->
+            <img
+              src="../../assets/destination/image-mars.png"
+              class="dest-img"
+              alt="Picture of planet mars"
+            />
+          </picture>
+        </div>
+      </div>
+
+      <!-- Tab options + info -->
+      <div class="main-dest--tab-info">
+        <!-- Tab nav -->
+        <nav class="dest-tab-nav">
+          <ul class="dest-tab-nav--list">
+            <li>
+              <a href="destination-moon.html" class="dest-tab-nav--link"
+                >Moon</a
+              >
+            </li>
+            <li><a href="#" class="dest-tab-nav--link">Mars</a></li>
+            <li>
+              <a href="destination-europa.html" class="dest-tab-nav--link"
+                >Europa</a
+              >
+            </li>
+            <li>
+              <a href="destination-titan.html" class="dest-tab-nav--link"
+                >Titan</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Info. -->
+        <div class="dest-info-box">
+          <h2 class="heading-two">Mars</h2>
+          <p class="body-text">
+            Don’t forget to pack your hiking boots. You’ll need them to tackle
+            Olympus Mons, the tallest planetary mountain in our solar system.
+            It’s two and a half times the size of Everest!
+          </p>
+        </div>
+
+        <!-- Data -->
+        <div class="dest-data-box">
+          <div class="dest-data--distance">
+            <p class="subheading-two">avg. distance</p>
+            <p class="subheading-one">225 mil. km</p>
+          </div>
+
+          <div class="dest-data--travel-time">
+            <p class="subheading-two">Est. travel time</p>
+            <p class="subheading-one">9 months</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

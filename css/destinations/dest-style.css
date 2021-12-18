@@ -1,0 +1,88 @@
+body {
+  background-image: url("../../assets/destination/background-destination-desktop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.dest {
+  row-gap: 4.75rem;
+}
+
+.main-dest {
+  padding: 0 10.1875rem 7rem 10.1875rem;
+  gap: 9.8125rem;
+}
+
+.main-dest--title-img {
+  display: flex;
+  flex-direction: column;
+  gap: 6.0625rem;
+}
+
+.dest-img {
+  max-width: 27.8125rem;
+}
+
+.main-dest--tab-info {
+  height: 29.5rem;
+  align-self: end;
+}
+
+/* Tab nav */
+.dest-tab-nav {
+  height: 2.125rem;
+  margin-bottom: 2.3125rem;
+}
+
+.dest-tab-nav--list {
+  display: flex;
+  list-style: none;
+  gap: 2.25rem;
+  height: 100%;
+}
+
+.dest-tab-nav--link:link,
+.dest-tab-nav--link:visited {
+  display: inline-block;
+  height: 100%;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 2.7px;
+  color: #d0d6f9;
+  transition: all 0.3s;
+}
+
+.dest-tab-nav--link:hover,
+.dest-tab-nav--link:active {
+  box-shadow: inset 0 -3px 0 #979797;
+}
+
+.dest-info-box {
+  margin-bottom: 3.375rem;
+}
+
+.dest-info-box h2 {
+  margin-bottom: 0.875rem;
+}
+
+.dest-data-box {
+  display: flex;
+  align-items: flex-end;
+  gap: 4.9375rem;
+  height: 5.625rem;
+  border-top: 1px solid #979797;
+}
+
+.dest-data--distance,
+.dest-data--travel-time {
+  height: 60%;
+}
+
+.heading-five strong {
+  color: #979797;
+}
