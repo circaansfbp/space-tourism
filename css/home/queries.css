@@ -93,13 +93,13 @@
 
     /* Hide nav */
     /* 1. Hide the element visually */
-    /* opacity: 0; */
+    opacity: 0;
 
     /* 2. Make it unaccessible to mouse and keyboard */
-    /* pointer-events: none; */
+    pointer-events: none;
 
     /* 3. Hide it from screen readers */
-    /* visibility: hidden; */
+    visibility: hidden;
   }
 
   /* nav-open class goes on the parent el (header) */

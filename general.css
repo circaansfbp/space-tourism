@@ -111,7 +111,8 @@ body {
 }
 
 .heading-one,
-.heading-two {
+.heading-two,
+.heading-three {
   font-family: "Bellefair", serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -124,6 +125,10 @@ body {
 
 .heading-two {
   font-size: 6.25rem;
+}
+
+.heading-three {
+  font-size: 3.5rem;
 }
 
 .heading-five {

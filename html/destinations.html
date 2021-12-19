@@ -19,8 +19,10 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="../../general.css" />
-    <link rel="stylesheet" href="../../css/destinations/dest-style.css" />
+    <link rel="stylesheet" href="../general.css" />
+    <link rel="stylesheet" href="../css/destinations/dest-style.css" />
+
+    <script defer src="../js/script.js"></script>
 
     <title>Frontend Mentor | Space tourism website</title>
   </head>
@@ -55,19 +57,21 @@
             <a href="#" class="main-nav-link"><strong>02</strong>Crew</a>
           </li>
           <li>
-            <a href="#" class="main-nav-link"><strong>03</strong>Technology</a>
+            <a href="technologies/technology-vehicle.html" class="main-nav-link"
+              ><strong>03</strong>Technology</a
+            >
           </li>
         </ul>
       </nav>
 
       <button class="btn btn--mobile-nav">
         <img
-          src="../../assets/shared/icon-hamburger.svg"
+          src="../assets/shared/icon-hamburger.svg"
           alt="Hamburger icon to open mobile navigation"
           name="open-nav"
         />
         <img
-          src="../../assets/shared/icon-close.svg"
+          src="../assets/shared/icon-close.svg"
           alt="X icon to close mobile navigation"
           name="close-nav"
         />
@@ -93,22 +97,22 @@
 
       <!-- 1. MOON TAB -->
       <!-- Img + info -->
-      <div class="main-dest--img-info grid--2-cols active-tab--info">
+      <div class="main-dest--img-info info-moon grid--2-cols active-tab--info">
         <div class="dest-img-box">
           <!-- Allow the browser to choose the supported format (webp or png) -->
           <picture>
             <source
-              srcset="../../assets/destination/image-moon.webp"
+              srcset="../assets/destination/image-moon.webp"
               type="image/webp"
             />
             <source
-              srcset="../../assets/destination/image-moon.png"
+              srcset="../assets/destination/image-moon.png"
               type="image/png"
             />
 
             <!-- Actual img rendered -->
             <img
-              src="../../assets/destination/image-moon.png"
+              src="../assets/destination/image-moon.png"
               class="dest-img"
               alt="Picture of the moon"
             />
@@ -142,22 +146,22 @@
 
       <!-- 2. MARS TAB -->
       <!-- Img + info -->
-      <div class="main-dest--img-info grid--2-cols">
+      <div class="main-dest--img-info info-mars grid--2-cols">
         <div class="dest-img-box">
           <!-- Allow the browser to choose the supported format (webp or png) -->
           <picture>
             <source
-              srcset="../../assets/destination/image-mars.webp"
+              srcset="../assets/destination/image-mars.webp"
               type="image/webp"
             />
             <source
-              srcset="../../assets/destination/image-mars.png"
+              srcset="../assets/destination/image-mars.png"
               type="image/png"
             />
 
             <!-- Actual img rendered -->
             <img
-              src="../../assets/destination/image-mars.png"
+              src="../assets/destination/image-mars.png"
               class="dest-img"
               alt="Picture of planet Mars"
             />
@@ -190,22 +194,22 @@
 
       <!-- 3. EUROPA TAB -->
       <!-- Img + info -->
-      <div class="main-dest--img-info grid--2-cols">
+      <div class="main-dest--img-info info-europa grid--2-cols">
         <div class="dest-img-box">
           <!-- Allow the browser to choose the supported format (webp or png) -->
           <picture>
             <source
-              srcset="../../assets/destination/image-europa.webp"
+              srcset="../assets/destination/image-europa.webp"
               type="image/webp"
             />
             <source
-              srcset="../../assets/destination/image-europa.png"
+              srcset="../assets/destination/image-europa.png"
               type="image/png"
             />
 
             <!-- Actual img rendered -->
             <img
-              src="../../assets/destination/image-europa.png"
+              src="../assets/destination/image-europa.png"
               class="dest-img"
               alt="Picture of one of Jupiter's moons, Europa"
             />
@@ -239,22 +243,22 @@
 
       <!-- 4. TITAN TAB -->
       <!-- Img + info -->
-      <div class="main-dest--img-info grid--2-cols">
+      <div class="main-dest--img-info info-titan grid--2-cols">
         <div class="dest-img-box">
           <!-- Allow the browser to choose the supported format (webp or png) -->
           <picture>
             <source
-              srcset="../../assets/destination/image-titan.webp"
+              srcset="../assets/destination/image-titan.webp"
               type="image/webp"
             />
             <source
-              srcset="../../assets/destination/image-titan.png"
+              srcset="../assets/destination/image-titan.png"
               type="image/png"
             />
 
             <!-- Actual img rendered -->
             <img
-              src="../../assets/destination/image-titan.png"
+              src="../assets/destination/image-titan.png"
               class="dest-img"
               alt="Picture of planet Saturn's moon, Titan"
             />
