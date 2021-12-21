@@ -6,10 +6,6 @@ body {
   background-size: cover;
 }
 
-.dest {
-  row-gap: 4.75rem;
-}
-
 .main-dest {
   display: grid;
   grid-template-columns: 1fr;

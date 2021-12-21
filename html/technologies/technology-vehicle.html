@@ -28,7 +28,7 @@
 
     <title>Frontend Mentor | Space tourism website</title>
   </head>
-  <body>
+  <body class="sec-page-gap">
     <!-- Header -->
     <header class="header">
       <!-- Logo -->
@@ -46,12 +46,12 @@
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li>
-            <a href="#" class="main-nav-link active-link"
+            <a href="../../index.html" class="main-nav-link"
               ><strong>00</strong>Home</a
             >
           </li>
           <li>
-            <a href="html/destinations.html" class="main-nav-link"
+            <a href="../destinations.html" class="main-nav-link"
               ><strong>01</strong>Destination</a
             >
           </li>
@@ -59,7 +59,9 @@
             <a href="#" class="main-nav-link"><strong>02</strong>Crew</a>
           </li>
           <li>
-            <a href="#" class="main-nav-link"><strong>03</strong>Technology</a>
+            <a href="#" class="main-nav-link active-link"
+              ><strong>03</strong>Technology</a
+            >
           </li>
         </ul>
       </nav>
@@ -78,7 +80,7 @@
       </button>
     </header>
 
-    <main class="main-tech grid--2-cols">
+    <main class="main-tech">
       <!-- Title -->
       <div class="main-tech--title-box">
         <h5 class="heading-five heading-five--white">
@@ -88,13 +90,16 @@
 
       <!-- Numbered tabs -->
       <div class="main-tech--tabs-box">
-        <button class="tech-tab tech-tab--active">1</button>
-        <button class="tech-tab">2</button>
-        <button class="tech-tab">3</button>
+        <button class="tech-tab tech-tab--active" data-slide="launch-vehicle">
+          1
+        </button>
+        <button class="tech-tab" data-slide="spaceport">2</button>
+        <button class="tech-tab" data-slide="space-capsule">3</button>
       </div>
 
+      <!-- Launch vehicle slide -->
       <!-- Info. + img -->
-      <div class="main-tech--info-img-box">
+      <div class="main-tech--info-img-box slide--launch-vehicle">
         <!-- Info. -->
         <div class="main-tech--info">
           <p class="subheading-two">The terminology...</p>
@@ -112,6 +117,58 @@
         <div class="main-tech--img">
           <img
             src="../../assets/technology/image-launch-vehicle-portrait.jpg"
+            class="tech-img"
+            alt="Picture of the launch vehicle"
+          />
+        </div>
+      </div>
+
+      <!-- Spaceport slide -->
+      <!-- Info. + img -->
+      <div class="main-tech--info-img-box slide--spaceport">
+        <!-- Info. -->
+        <div class="main-tech--info">
+          <p class="subheading-two">The terminology...</p>
+          <h2 class="heading-three">Spaceport</h2>
+          <p class="body-text">
+            A spaceport or cosmodrome is a site for launching (or receiving)
+            spacecraft, by analogy to the seaport for ships or airport for
+            aircraft. Based in the famous Cape Canaveral, our spaceport is
+            ideally situated to take advantage of the Earth’s rotation for
+            launch.
+          </p>
+        </div>
+
+        <!-- Img. -->
+        <div class="main-tech--img">
+          <img
+            src="../../assets/technology/image-spaceport-portrait.jpg"
+            class="tech-img"
+            alt="Picture of the launch vehicle"
+          />
+        </div>
+      </div>
+
+      <!-- Space capsule slide -->
+      <!-- Info. + img -->
+      <div class="main-tech--info-img-box slide--space-capsule">
+        <!-- Info. -->
+        <div class="main-tech--info">
+          <p class="subheading-two">The terminology...</p>
+          <h2 class="heading-three">space capsule</h2>
+          <p class="body-text">
+            A space capsule is an often-crewed spacecraft that uses a blunt-body
+            reentry capsule to reenter the Earth's atmosphere without wings. Our
+            capsule is where you'll spend your time during the flight. It
+            includes a space gym, cinema, and plenty of other activities to keep
+            you entertained.
+          </p>
+        </div>
+
+        <!-- Img. -->
+        <div class="main-tech--img">
+          <img
+            src="../../assets/technology/image-space-capsule-portrait.jpg"
             class="tech-img"
             alt="Picture of the launch vehicle"
           />

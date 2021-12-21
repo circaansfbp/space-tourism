@@ -4,10 +4,17 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  height: 56.25rem;
 }
 
-.main-tech--title-box {
-  grid-column: span 2;
+.main-tech {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 5rem;
+  row-gap: 8.5625rem;
+  padding: 0 0 6.3125rem 10.375rem;
+  position: relative;
+  overflow-y: hidden;
 }
 
 .heading-five strong {
@@ -18,7 +25,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding-left: 10.3125rem;
 }
 
 .tech-tab {
@@ -32,6 +38,11 @@ body {
   font-family: "Bellefair", serif;
   font-size: 2rem;
   font-weight: 400;
+  transition: all 0.4s;
+}
+
+.tech-tab:hover {
+  border: 1px solid #fff;
 }
 
 .tech-tab.tech-tab--active {
@@ -39,3 +50,37 @@ body {
   background-color: #fff;
   color: #0b0d17;
 }
+
+.main-tech--info-img-box {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 3.75rem;
+  left: 20.3125rem;
+  transition: transform 0.4s;
+}
+
+.main-tech--info {
+  flex-basis: 29.375rem;
+  padding-top: 6.9375rem;
+}
+
+.main-tech--img {
+  padding-bottom: 6.3125rem;
+}
+
+.tech-img {
+  max-width: 32.1875rem;
+}
+
+/* .slide--launch-vehicle {
+  transform: translateY(0);
+}
+
+.slide--spaceport {
+  transform: translateY(-100%);
+}
+
+.slide--space-capsule {
+  transform: translateY(-200%);
+} */

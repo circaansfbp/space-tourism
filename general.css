@@ -35,7 +35,11 @@ body {
   align-items: start;
   height: 100vh;
   overflow-x: hidden;
-  /* animation: fade-in-body 0.5s; */
+}
+
+/* Applied on the body */
+.sec-page-gap {
+  row-gap: 4.75rem;
 }
 
 .grid--2-cols {
